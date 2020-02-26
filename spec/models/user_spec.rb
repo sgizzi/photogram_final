@@ -11,6 +11,8 @@ RSpec.describe User, type: :model do
     end
 
     describe "Validations" do
+
+    it { should validate_presence_of(:username).with_message('can't be blank, dummy') }
       
     end
 end
